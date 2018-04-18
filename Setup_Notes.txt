@@ -1,0 +1,13 @@
+Setup
+1. Setup Linux AWS Server
+2. Save Key
+3. Get Public DNS for server
+4. Download Termux (Chromebook must have Google Play Store)
+    a) run "termux-setup-storage" to access chromebook files
+    b) run "pkg install openssh" to run ssh-keygen
+    c) run "ssh-keygen -y -f [AWSKey].pem > [AWSKey].pub
+5. Download ChromeApp "Secure Shell App"
+    a) enter username
+    b) enter host as public DNS
+    c) Import both .pub and .pem keys (removing .pem extension)
+6. Click "Connect" and access your AWS intance
